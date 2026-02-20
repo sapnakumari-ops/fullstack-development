@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+
+<style>
+body {
+    background-color: #1e5a95;
+    font-family: "Times New Roman", serif;
+}
+
+.container {
+    width: 850px;
+    margin: 100px auto;
+}
+
+fieldset {
+    border: 1px solid white;
+    padding: 30px 50px;
+    color: white;
+}
+
+legend {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 8px 0;
+}
+
+.label-col {
+    width: 200px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+input[type="text"],
+select {
+    width: 320px;
+    height: 22px;
+}
+
+input[type="number"] {
+    width: 50px;
+    height: 20px;
+}
+
+.step-section {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.step-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #8cc63f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<fieldset>
+<legend>Registration Details</legend>
+
+<table>
+
+<tr>
+<td class="label-col">University :</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label-col">Institute :</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td class="label-col">Branch :</td>
+<td>
+<select>
+<option>-- select --</option>
+<option>CSE</option>
+<option>IT</option>
+<option>ECE</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="label-col">Degree :</td>
+<td>
+<select>
+<option>-- select --</option>
+<option>B.Tech</option>
+<option>M.Tech</option>
+</select>
+<input type="radio" name="status"> Pursuing
+<input type="radio" name="status"> Completed
+</td>
+</tr>
+
+<tr>
+<td class="label-col">Average CPI :</td>
+<td>
+<input type="number"> Upto
+<input type="number"> Th Semester
+</td>
+</tr>
+
+<tr>
+<td class="label-col">Experience :</td>
+<td>
+<input type="number"> Years
+</td>
+</tr>
+
+<tr>
+<td class="label-col">Your Website Or Blog :</td>
+<td>
+<input type="text" value="http://">
+</td>
+</tr>
+
+</table>
+
+</fieldset>
+
+<div class="step-section">
+<button class="step-btn">&#9664;</button>
+Step 2
+<button class="step-btn">&#9654;</button>
+</div>
+
+</div>
+
+</body>
+</html>
