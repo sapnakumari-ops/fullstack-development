@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+<style>
+body {
+    font-family: Arial;
+    font-size: 10px;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(55, 55, 186);
+    text-decoration: underline;
+    font-size:18px;
+}
+
+.form-box {
+    width: 700px;
+    margin: auto;
+    background-color: rgb(201, 54, 54);
+    padding: 15px;
+    border: 3px dashed black;
+    color: white;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 3px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 200px;
+    padding: 4px;
+    font-size: 12px;
+}
+
+textarea {
+    width: 200px;
+    height: 90px;
+}
+
+.note {
+    font-size: 11px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 15px;
+}
+</style>
+</head>
+<body>
+
+<h3>Student Registration Form Using Table in HTML</h3>
+<div class="form-box">
+
+<form>
+<table>
+
+<tr>
+<td>First Name</td>
+<td><input type="text" value="Ghanendra"></td>
+<td class="note">(Max 50 Characters Allowed)</td>
+</tr>
+
+<tr>
+<td>Last Name</td>
+<td><input type="text" value="Yadav"></td>
+<td class="note">(Max 50 Characters Allowed)</td>
+</tr>
+
+<tr>
+<td>Email ID</td>
+<td><input type="email" value="yghanendra@gmail.com"></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Mobile Number</td>
+<td><input type="text" value="7842xxxxxx"></td>
+<td class="note">(10 Digits Allowed)</td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Date of Birth(DOB)</td>
+<td>
+<select><option>Day</option></select>
+<select><option>Month</option></select>
+<select><option>Year</option></select>
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td colspan="2">
+<textarea></textarea>
+</td>
+</tr>
+
+<tr>
+<td>City</td>
+<td><input type="text" value="Bangalore"></td>
+<td class="note">(Max 50 Characters Allowed)</td>
+</tr>
+
+<tr>
+<td>Pin Code</td>
+<td><input type="text" value="560068"></td>
+<td class="note">(Max 6 Numbers Allowed)</td>
+</tr>
+
+<tr>
+<td>State</td>
+<td><input type="text" value="Karnataka"></td>
+<td class="note">(Max 50 Characters Allowed)</td>
+</tr>
+
+<tr>
+<td>Country</td>
+<td><input type="text" value="India"></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Hobbies</td>
+<td colspan="2">
+<input type="checkbox"> Drawing
+<input type="checkbox"> Singing
+<input type="checkbox"> Dancing
+<input type="checkbox"> Sketching
+<br>
+<input type="checkbox"> Others
+<input type="text" placeholder="Ex- Teaching">
+<span class="note">(Max 50 Characters Allowed)</span>
+</td>
+</tr>
+
+<tr>
+<td>Qualification</td>
+<td colspan="2">
+<input type="checkbox"> High School(10th)<br>
+<input type="checkbox"> Higher School(12th)<br>
+<input type="checkbox"> Graduation(Bachelors)<br>
+<input type="checkbox"> Post Graduation(Masters)<br>
+<input type="checkbox"> Phd
+</td>
+</tr>
+
+<tr>
+<td>Courses Applied For</td>
+<td colspan="2">
+<input type="radio" name="course"> BCA(Bachelor of Computer Applications)<br>
+<input type="radio" name="course"> B.Com(Bachelor of Commerce)<br>
+<input type="radio" name="course"> B.Sc(Bachelor of Science)<br>
+<input type="radio" name="course"> BA(Bachelor of Arts)<br>
+<input type="radio" name="course"> MCA(Master of Computer Applications)<br>
+<input type="radio" name="course"> M.Com(Master of Commerce)<br>
+<input type="radio" name="course"> M.Sc(Master of Science)<br>
+<input type="radio" name="course"> MA(Master of Arts)
+</td>
+</tr>
+
+<tr>
+<td colspan="3" class="buttons">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+  </tr>
+    </table>
+  </form>
+    </div>
+</body>
+</html>
